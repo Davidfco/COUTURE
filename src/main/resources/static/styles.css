@@ -3,81 +3,99 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
 /* 
+<<<<<<< HEAD
     Created on : 04/07/2023, 11:57:45 AM
     Author     : estra
 */
 /* Estilos para el encabezado */
-header {
-    background-color: #000000;
-    padding: 20px;
+/* Estilos generales */
+* /* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-    float: left;
-    margin-right: 20px;
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  background-color: #000000;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
-    height: 30px;
+  height: 30px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 140px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .search-box {
-    text-align: right;
-    margin-top: -23px;
+  text-align: right;
 }
 
-.search-box input {
-    padding: 5px;
-    width: 200px;
-}
-
-.search-box button {
-    padding: 5px 10px;
-}
-
-/* Estilos para la lista de productos */
-.product-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    overflow: hidden;
-}
 .search-box input {
   padding: 5px;
   width: 200px;
-  border-radius: 20px; /* Ajusta el valor según tus preferencias */
+  border-radius: 20px;
 }
 
 .search-box button {
   padding: 5px 10px;
-  border-radius: 20px; /* Ajusta el valor según tus preferencias */
+  border-radius: 20px;
+  margin-left: 10px;
 }
 
+/* Estilos para la lista de productos */
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+/* Estilos para el botón de flecha */
 .arrow-button {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    border-radius: 50%;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
 }
