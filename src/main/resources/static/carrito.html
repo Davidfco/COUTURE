@@ -12,18 +12,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>        
         <header>
-            <div>
-                <a href="index.html"><img src="./img/logo.jpg" alt="logo"/></a>
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.jpg" alt="Logo de la empresa"/></a>
             </div>         
             <nav> 
-                <a href="index.html">Inicio</a> 
-                <a href="#">Sobre nosotros</a> 
-                <a href="#">Buscar</a> 
+                <ul>                    
+                    <li><a href="#">Contacto</a></li> 
+                    <li><a href="#">Categoria</a></li>
+                    <li><a href="#">Ofertas</a></li>              
+                </ul>
             </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </div>          
+            <div class="user">
+            <a href="iniciarSesion.html"><img src="./img/user.png"></a>
+            </div>
         </header>
-        <div>
-            <h2 style="margin-top: 60px">SU CARRITO DE COMPRAS</h2>
-            <p style="margin-top: 120px">TOTAL:</p>
-        </div>
+        <main>
+            <div>
+                <h2 style="margin-top: 60px">SU CARRITO DE COMPRAS</h2>
+                <p style="margin-top: 120px">PRODUCTOS:</p>
+                <img src="ruta/imagen1.jpg" alt="Imagen 1">
+                <img src="ruta/imagen2.jpg" alt="Imagen 2">
+            </div>
+        </main>
     </body>
 </html>

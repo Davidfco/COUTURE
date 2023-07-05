@@ -11,91 +11,145 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 /* Estilos generales */
 * /* Estilos generales */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Estilos para el encabezado */
 header {
-  display: flex;
-  background-color: #000000;
-  padding: 20px;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    background-color: #000000;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo img {
-  height: 30px;
+/* Estilos de los iconos de imagenes */
+.logo img{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    float: left;
+    
 }
+.user img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    float: left;
+     margin-left: 30px; 
+}
+
 
 nav ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .search-box {
-  text-align: right;
+    text-align: right;
 }
 
 .search-box input {
-  padding: 5px;
-  width: 200px;
-  border-radius: 20px;
+    padding: 5px;
+    width: 400px;
+    border-radius: 20px;  
 }
 
 .search-box button {
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-left: 3px;
 }
 
 /* Estilos para la lista de productos */
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
-  overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
 .product {
-  text-align: center;
+    text-align: center;
 }
 
 .product img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .product p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 /* Estilos para el botón de flecha */
 .arrow-button {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #333;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Estilos del formulario de inicio de sesion */
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 20px;
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;  
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
 }
