@@ -7,9 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : 04/07/2023, 11:57:45 AM
     Author     : estra
 */
-/* Estilos para el encabezado */
-/* Estilos generales */
-* /* Estilos generales */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +18,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Estilos para el encabezado */
+
 header {
   display: flex;
   background-color: #000000;
@@ -64,7 +62,6 @@ nav ul li a {
   margin-left: 10px;
 }
 
-/* Estilos para la lista de productos */
 .product-list {
   display: flex;
   justify-content: space-between;
@@ -87,7 +84,6 @@ nav ul li a {
   margin: 5px 0;
 }
 
-/* Estilos para el botón de flecha */
 .arrow-button {
   width: 30px;
   height: 30px;
