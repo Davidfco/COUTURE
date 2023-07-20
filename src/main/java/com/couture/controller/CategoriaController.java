@@ -1,8 +1,7 @@
 
 package com.couture.controller;
 
-import com.couture.domain.Camisa;
-import com.couture.service.CamisaService;
+import com.couture.domain.Categoria;
 import com.couture.service.impl.FirebaseStorageServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,25 +12,26 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import com.couture.service.CategoriaService;
 
 @Controller
 @Slf4j
 @RequestMapping("/")
-public class CamisaController {
+public class CategoriaController {
     
     @Autowired
-    private CamisaService camisaService;
+    private CategoriaService categoriaService;
 
     @GetMapping("/")
     public String inicio(Model model) {
-        var camisas = camisaService.getCamisas(false);
-        model.addAttribute("camisas", camisas);
-        model.addAttribute("totalCamisas", camisas.size());
+        var categorias = categoriaService.getCategorias(false);
+        model.addAttribute("categorias", categorias);
+        model.addAttribute("totalCategorias", categorias.size());
         return "/";
     }
     
     @GetMapping("/")
-    public String camisaNuevo(Camisa camisa) {
+    public String categoriaNuevo(Categoria categoria) {
         return "/";
     }
 
@@ -39,30 +39,30 @@ public class CamisaController {
     private FirebaseStorageServiceImpl firebaseStorageService;
     
     @PostMapping("/")
-    public String camisaGuardar(Camisa camisa,
+    public String categoriaGuardar(Categoria categoria,
             @RequestParam("imagenFile") MultipartFile imagenFile) {        
         if (!imagenFile.isEmpty()) {
-            camisaService.save(camisa);
-            camisa.setImagen(
+            categoriaService.save(categoria);
+            categoria.setRutaImagen(
                     firebaseStorageService.cargaImagen(
                             imagenFile, 
-                            "camisa", 
-                            camisa.getIdCamisa()));
+                            "categoria", 
+                            categoria.getIdCategoria()));
         }
-        camisaService.save(camisa);
+        categoriaService.save(categoria);
         return "redirect:/";
     }
 
-    @GetMapping("/eliminar/{idCamisa}")
-    public String camisaEliminar(Camisa camisa) {
-        camisaService.delete(camisa);
+    @GetMapping("/eliminar/{idCategoria}")
+    public String categoriaEliminar(Categoria categoria) {
+        categoriaService.delete(categoria);
         return "redirect:/";
     }
 
-    @GetMapping("/modificar/{idCamisa}")
-    public String camisaModificar(Camisa camisa, Model model) {
-        camisa = camisaService.getCamisa(camisa);
-        model.addAttribute("camisa", camisa);
+    @GetMapping("/modificar/{idCategoria}")
+    public String categoriaModificar(Categoria categoria, Model model) {
+        categoria = categoriaService.getCategoria(categoria);
+        model.addAttribute("categoria", categoria);
         return "/";
     }
 }
