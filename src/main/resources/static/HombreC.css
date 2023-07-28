@@ -3,9 +3,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : 27/07/2023, 09:32:29 PM
+    Created on : 28/07/2023, 01:02:50 PM
     Author     : estra
 */
+
 
 * {
     margin: 0;
@@ -60,15 +61,15 @@ header {
     align-items: center;
 }
 
-
+/* Nuevos estilos para la cuadrícula de productos */
 .product-list-container {
     padding-bottom: 20px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes y detalles del producto */
 }
 
 .product {
@@ -116,8 +117,6 @@ header {
     font-size: 14px;
     margin-top: 10px;
 }
-
-
 
 
 

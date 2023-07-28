@@ -23,7 +23,7 @@ body {
     height: 70px;
     display: flex;
     float: left;
-   margin-left: -1px; 
+   margin-left: -5px; 
 }
 
 .user img {
