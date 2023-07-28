@@ -7,148 +7,147 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>COUTURE</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-         header {
-            position: relative;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <title>COUTURE</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            header {
+                position: relative;
+            }
 
-        header::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 5px; 
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-            
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-      .product {
-            background-color: #f9f9f9; 
-            padding: 10px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-            margin-bottom: 20px;
-        }
+            header::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 
-        .product img {
-            width: 200px;
-            height: 200px;
-            max-width: 100%;
-            max-height: 200px; 
-            object-fit: cover;
-            border: 1px solid #ccc;
-            background-color: #f5f5f5;
-            padding: 10px;
-            margin-bottom: 10px; 
-        }
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .product {
+                background-color: #f9f9f9;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+            }
 
-        .product-info {
-            text-align: center;
-            font-size: 14px; 
-        }
+            .product img {
+                width: 200px;
+                height: 200px;
+                max-width: 100%;
+                max-height: 200px;
+                object-fit: cover;
+                border: 1px solid #ccc;
+                background-color: #f5f5f5;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
 
-        .product-name {
-            font-size: 18px; 
-            font-weight: bold;
-        }
+            .product-info {
+                text-align: center;
+                font-size: 14px;
+            }
 
-        .price-discount {
-            font-size: 14px; 
-            color: #000; 
-        }
+            .product-name {
+                font-size: 18px;
+                font-weight: bold;
+            }
 
-        .gray-discount {
-            font-size: 14px; 
-            color: #888; 
-            text-decoration: line-through; 
-        }
+            .price-discount {
+                font-size: 14px;
+                color: #000;
+            }
 
-        .green-discount {
-            font-size: 14px; 
-            color: green; 
-        }
+            .gray-discount {
+                font-size: 14px;
+                color: #888;
+                text-decoration: line-through;
+            }
 
-        .add-to-cart-button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px; 
-            margin-top: 10px; 
-        }
-      
-        
+            .green-discount {
+                font-size: 14px;
+                color: green;
+            }
 
- 
-        .tendencias-semana {
-            text-align: left; 
-            
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-            width: 100%;
-        }
+            .add-to-cart-button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                margin-top: 10px;
+            }
 
-        .product-list-container {
-            padding-bottom: 20px; 
-        }
 
-        .product-without-discount {
-            margin-top: 30px; 
-        }
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+            .tendencias-semana {
+                text-align: left;
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+                font-size: 24px;
+                font-weight: bold;
+                margin: 20px 0;
+                width: 100%;
+            }
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-    </style>
-</head>
-    </div>
+            .product-list-container {
+                padding-bottom: 20px;
+            }
+
+            .product-without-discount {
+                margin-top: 30px;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 120px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
     <header>
         <div class="logo">
             <a href="index.html"><img src="./img/pngegg.png" alt="Logo de la empresa" /></a>
         </div>
         <nav>
             <ul>
-              <li class="dropdown">
-               <a href="#">Contacto</a>
-                  <div class="dropdown-content">
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <div class="dropdown-content">
                         <a href="#">Ayuda</a>
                         <a href="#">Condiciones</a>
-                   
-                     </div>
+
+                    </div>
                 </li>
                 <li class="dropdown">
                     <a href="#">Categoría</a>
@@ -158,14 +157,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         <a href="#">Niños</a>
                     </div>
                 </li>
-               <li class="dropdown">
-                <a href="#">Ofertas</a>
-              <div class="dropdown-content">
-                <a href="#">Ayuda</a>
-                 <a href="#">Terminos de uso</a>
-                 </div>
-               </li>
-           </ul>
+                <li class="dropdown">
+                    <a href="#">Ofertas</a>
+                    <div class="dropdown-content">
+                        <a href="#">Ayuda</a>
+                        <a href="#">Terminos de uso</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
         <div class="search-box">
             <input type="text" placeholder="Buscar...">
@@ -177,4 +176,3 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
     </header>
 
-    

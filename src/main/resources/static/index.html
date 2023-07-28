@@ -9,358 +9,350 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>COUTURE</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-         header {
-            position: relative;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <title>COUTURE</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            header {
+                position: relative;
+            }
 
-        header::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 5px; 
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-           
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-      .product {
-            background-color: #f9f9f9; 
-            padding: 10px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-            margin-bottom: 20px;
-        }
+            header::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 
-        .product img {
-            width: 200px;
-            height: 200px;
-            max-width: 100%;
-            max-height: 200px; 
-            object-fit: cover;
-            border: 1px solid #ccc;
-            background-color: #f5f5f5;
-            padding: 10px;
-            margin-bottom: 10px; 
-        }
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .product {
+                background-color: #f9f9f9;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+            }
 
-        .product-info {
-            text-align: center;
-            font-size: 14px; 
-        }
+            .product img {
+                width: 200px;
+                height: 200px;
+                max-width: 100%;
+                max-height: 200px;
+                object-fit: cover;
+                border: 1px solid #ccc;
+                background-color: #f5f5f5;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
 
-        .product-name {
-            font-size: 18px; 
-            font-weight: bold;
-        }
+            .product-info {
+                text-align: center;
+                font-size: 14px;
+            }
 
-        .price-discount {
-            font-size: 14px; 
-            color: #000; 
-        }
+            .product-name {
+                font-size: 18px;
+                font-weight: bold;
+            }
 
-        .gray-discount {
-            font-size: 14px; 
-            color: #888; 
-            text-decoration: line-through; 
-        }
+            .price-discount {
+                font-size: 14px;
+                color: #000;
+            }
 
-        .green-discount {
-            font-size: 14px; 
-            color: green; 
-        }
+            .gray-discount {
+                font-size: 14px;
+                color: #888;
+                text-decoration: line-through;
+            }
 
-        .add-to-cart-button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px; 
-            margin-top: 10px; 
-        }
-      
-      
-        .tendencias-semana {
-            text-align: left; 
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0; 
-            width: 100%;
-        }
+            .green-discount {
+                font-size: 14px;
+                color: green;
+            }
 
-        .product-list-container {
-            padding-bottom: 20px; 
-        }
+            .add-to-cart-button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                margin-top: 10px;
+            }
 
-        .product-without-discount {
-            margin-top: 30px; 
-        }
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+            .tendencias-semana {
+                text-align: left;
+                font-size: 24px;
+                font-weight: bold;
+                margin: 20px 0;
+                width: 100%;
+            }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+            .product-list-container {
+                padding-bottom: 20px;
+            }
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+            .product-without-discount {
+                margin-top: 30px;
+            }
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-    </style>
-</head>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
 
-<body>
-    <div class="black-header">
-        <h2>✨PREPARATE PARA EXPLORAR, OFERTAS DE FIN DE TEMPORADA ✨</h2>
-    </div>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="./img/pngegg.png" alt="Logo de la empresa" /></a>
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 120px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="black-header">
+            <h2>✨PREPARATE PARA EXPLORAR, OFERTAS DE FIN DE TEMPORADA ✨</h2>
         </div>
-        <nav>
-            <ul>
-              <li class="dropdown">
-               <a href="#">Contacto</a>
-                  <div class="dropdown-content">
-                        <a href="#">Ayuda</a>
-                        <a href="#">Condiciones</a>
-                   
-                     </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Categoría</a>
-                    <div class="dropdown-content">
-                        <a href="#">Hombre</a>
-                        <a href="#">Mujer</a>
-                        <a href="#">Niños</a>
-                    </div>
-                </li>
-               <li class="dropdown">
-                <a href="#">Ofertas</a>
-              <div class="dropdown-content">
-                <a href="#">Ayuda</a>
-                 <a href="#">Terminos de uso</a>
-                 </div>
-               </li>
-           </ul>
-        </nav>
-        <div class="search-box">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </div>
-        <div class="user">
-            <a href="carrito.html"><img src="./img/carrito_1.png" alt="icono de carrito" class="carrito-img" /></a>
-            <a href="iniciarSesion.html"><img src="./img/pngwing.com.png"></a>
-        </div>
-    </header>
-
-    <main>
-        <div class="full-width-image">
-            <img src="./img/marco.jpeg" alt="Imagen a lo ancho">
-        </div>
-
-         <div class="product-list-container">
-            <div class="product-list">
-                <!-- Agrega las imágenes de productos aquí -->
-                <div class="product">
-                    <img src="./img/catbird image (12).png" alt="Imagen 1">
-                    <div class="product-info">
-                        <p class="product-name">Couture Wool Summer</p>
-                        <p class="price-discount">14200₡ <span class="gray-discount">20000₡</span></p>
-                        <p class="green-discount">20% de descuento</p>
-                        <button class="add-to-cart-button">Añadir al Carrito</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="./img/catbird image (5).png" alt="Imagen 2">
-                    <div class="product-info">
-                        <p class="product-name">Sports Top</p>
-                        <p class="price-discount">18000₡ <span class="gray-discount">25000₡</span></p>
-                        <p class="green-discount">28% de descuento</p>
-                        <button class="add-to-cart-button">Añadir al Carrito</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="./img/catbird image (8).png" alt="Imagen 3">
-                    <div class="product-info">
-                        <p class="product-name">Couture Go</p>
-                        <p class="price-discount">21000₡ <span class="gray-discount">30000₡</span></p>
-                        <p class="green-discount">30% de descuento</p>
-                        <button class="add-to-cart-button">Añadir al Carrito</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="./img/catbird image (1).png" alt="Imagen 4">
-                    <div class="product-info">
-                        <p class="product-name">Gray Sports Top</p>
-                        <p class="price-discount">13000₡ <span class="gray-discount">18000₡</span></p>
-                        <p class="green-discount">28% de descuento</p>
-                        <button class="add-to-cart-button">Añadir al Carrito</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="./img/catbird image (18).png" alt="Imagen 5">
-                    <div class="product-info">
-                        <p class="product-name">Jacket Blue</p>
-                        <p class="price-discount">16500₡ <span class="gray-discount">22000₡</span></p>
-                        <p class="green-discount">15% de descuento</p>
-                        <button class="add-to-cart-button">Añadir al Carrito</button>
-                    </div>
-                </div>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./img/pngegg.png" alt="Logo de la empresa" /></a>
             </div>
-        </div>
-      <div class="product-list-container">
-    <div class="tendencias-semana product-without-discount">
-        Tendencias de la semana
-    </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Contacto</a>
+                        <div class="dropdown-content">
+                            <a href="#">Ayuda</a>
+                            <a href="#">Condiciones</a>
 
-    <div class="product-list">
-        <div class="product">
-            <img src="./img/nueva_categoria1.png" alt="Imagen nueva categoría 1">
-            <div class="product-info">
-                <p class="product-name">Nuevo Producto 1</p>
-                <p class="price-discount">25000₡ <span> </span></p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Categoría</a>
+                        <div class="dropdown-content">
+                            <a href="#">Hombre</a>
+                            <a href="#">Mujer</a>
+                            <a href="#">Niños</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ofertas</a>
+                        <div class="dropdown-content">
+                            <a href="#">Ayuda</a>
+                            <a href="#">Terminos de uso</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
             </div>
-        </div>
-      <div class="product">
-    <img src="./ruta_de_la_imagen1.png" alt="Descripción de la imagen 1">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 1</p>
-        <p class="price-discount">Precio del Producto 1<span></span></p>
-    </div>
-</div>
-
-<div class="product">
-    <img src="./ruta_de_la_imagen2.png" alt="Descripción de la imagen 2">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 2</p>
-        <p class="price-discount">Precio del Producto 2<span></span></p>
-    </div>
-</div>
-
-<!-- Repite el mismo patrón para agregar las 8 imágenes restantes -->
-
-<div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
-      <div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
-       <div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
-      <div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
-       <div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
- <div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
-<div class="product">
-    <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
-    <div class="product-info">
-        <p class="product-name">Nombre del Producto 8</p>
-        <p class="price-discount">Precio del Producto 8<span></span></p>
-    </div>
-</div>
-
-      
-       </div>
-        </div>
-       </div>
-        </div>
-
-       
-
-    <footer>
-        <header class="footer-header">
-            <h3>Productos</h3>
-            <h3>Categoría</h3>
-            <h3>Información de la Empresa</h3>
-            <h3>Follow Us</h3>
+            <div class="user">
+                <a href="carrito.html"><img src="./img/carrito_1.png" alt="icono de carrito" class="carrito-img" /></a>
+                <a href="iniciarSesion.html"><img src="./img/pngwing.com.png"></a>
+            </div>
         </header>
 
-        <div class="footer-content">
-            <div class="footer-section">
-                <ul>
-                    <li>Calzado</li>
-                    <li>Ropa</li>
-                    <li>Accesorios</li>
-                </ul>
+        <main>
+            <div class="full-width-image">
+                <img src="./img/marco.jpeg" alt="Imagen a lo ancho">
             </div>
-            <div class="footer-section">
-                <ul>
-                    <li>Hombre</li>
-                    <li>Mujer</li>
-                    <li>Niños</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <ul>
-                    <li>Acerca de Couture</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <div class="social-icons">
-                    <a href="#"><img src="./img/insta.png" alt="Instagram"></a>
-                    <a href="#"><img src="./img/face_1.png" alt="Facebook"></a>
+
+            <div class="product-list-container">
+                <div class="product-list">
+                    <!-- Agrega las imágenes de productos aquí -->
+                    <div class="product">
+                        <img src="./img/catbird image (12).png" alt="Imagen 1">
+                        <div class="product-info">
+                            <p class="product-name">Couture Wool Summer</p>
+                            <p class="price-discount">14200₡ <span class="gray-discount">20000₡</span></p>
+                            <p class="green-discount">20% de descuento</p>
+                            <button class="add-to-cart-button">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./img/catbird image (5).png" alt="Imagen 2">
+                        <div class="product-info">
+                            <p class="product-name">Sports Top</p>
+                            <p class="price-discount">18000₡ <span class="gray-discount">25000₡</span></p>
+                            <p class="green-discount">28% de descuento</p>
+                            <button class="add-to-cart-button">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./img/catbird image (8).png" alt="Imagen 3">
+                        <div class="product-info">
+                            <p class="product-name">Couture Go</p>
+                            <p class="price-discount">21000₡ <span class="gray-discount">30000₡</span></p>
+                            <p class="green-discount">30% de descuento</p>
+                            <button class="add-to-cart-button">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./img/catbird image (1).png" alt="Imagen 4">
+                        <div class="product-info">
+                            <p class="product-name">Gray Sports Top</p>
+                            <p class="price-discount">13000₡ <span class="gray-discount">18000₡</span></p>
+                            <p class="green-discount">28% de descuento</p>
+                            <button class="add-to-cart-button">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./img/catbird image (18).png" alt="Imagen 5">
+                        <div class="product-info">
+                            <p class="product-name">Jacket Blue</p>
+                            <p class="price-discount">16500₡ <span class="gray-discount">22000₡</span></p>
+                            <p class="green-discount">15% de descuento</p>
+                            <button class="add-to-cart-button">Añadir al Carrito</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="product-list-container">
+                <div class="tendencias-semana product-without-discount">
+                    Tendencias de la semana
+                </div>
 
-</body>
+                <div class="product-list">
+                    <div class="product">
+                        <img src="./img/nueva_categoria1.png" alt="Imagen nueva categoría 1">
+                        <div class="product-info">
+                            <p class="product-name">Nuevo Producto 1</p>
+                            <p class="price-discount">25000₡ <span> </span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen1.png" alt="Descripción de la imagen 1">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 1</p>
+                            <p class="price-discount">Precio del Producto 1<span></span></p>
+                        </div>
+                    </div>
 
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen2.png" alt="Descripción de la imagen 2">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 2</p>
+                            <p class="price-discount">Precio del Producto 2<span></span></p>
+                        </div>
+                    </div>
+
+                    <!-- Repite el mismo patrón para agregar las 8 imágenes restantes -->
+
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="./ruta_de_la_imagen8.png" alt="Descripción de la imagen 8">
+                        <div class="product-info">
+                            <p class="product-name">Nombre del Producto 8</p>
+                            <p class="price-discount">Precio del Producto 8<span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            <!-- FOOTER de la pagina -->
+            <footer>
+                <header class="footer-header">
+                    <h3>Productos</h3>
+                    <h3>Categoría</h3>
+                    <h3>Información de la Empresa</h3>
+                    <h3>Follow Us</h3>
+                </header>
+
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <ul>
+                            <li>Calzado</li>
+                            <li>Ropa</li>
+                            <li>Accesorios</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <ul>
+                            <li>Hombre</li>
+                            <li>Mujer</li>
+                            <li>Niños</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <ul>
+                            <li>Acerca de Couture</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <div class="social-icons">
+                            <a href="#"><img src="./img/insta.png" alt="Instagram"></a>
+                            <a href="#"><img src="./img/face_1.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
 </html>
