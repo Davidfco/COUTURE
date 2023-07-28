@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COUTURE</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+       
+        .header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 46px;
+        }
+
+        .contact-info {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 29px;
+            border-radius: 10px;
+            flex: 1;
+        }
+      
+      .footer-header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header h3 {
+    margin: 0;
+    flex-basis: 25%;
+}
+
+footer {
+  
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    width: 100%; 
+     margin-top: 70px;
+
+}
+
+.footer-content {
+  display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: -45;
+}
+
+.footer-section ul li {
+    margin-bottom: 7px;
+}
+
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+
+         .logo img {
+            margin-top: -10px;
+            width: 80px;
+            height: 70px;
+            display: flex;
+            float: left;
+            margin-left: -5px; 
+        }
+
+        .user img {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            float: left;
+            margin-left: 30px; 
+        }
+         header {
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 5px; 
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+      .product {
+            background-color: #f9f9f9; 
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            max-width: 100%;
+            max-height: 200px; 
+            object-fit: cover;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 10px; 
+        }
+
+        .product-info {
+            text-align: center;
+            font-size: 14px; 
+        }
+
+        .product-name {
+            font-size: 18px; 
+            font-weight: bold;
+        }
+
+        .price-discount {
+            font-size: 14px; 
+            color: #000; 
+        }
+
+        .gray-discount {
+            font-size: 14px; 
+            color: #888; 
+            text-decoration: line-through; 
+        }
+
+        .green-discount {
+            font-size: 14px; 
+            color: green; 
+        }
+
+        .add-to-cart-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px; 
+            margin-top: 10px; 
+        }
+      
+        
+
+ 
+        
+        .tendencias-semana {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 33px 0;
+            width: 100%;
+        }
+
+      
+        .product-list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .product-grid {
+            width: 100%;
+            max-width: 1200px; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+       
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+      .center-text {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+    
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./img/pngegg.png" alt="Logo de la empresa" /></a>
+        </div>
+        <nav>
+            <ul>
+              <li class="dropdown">
+               <a href="#">Contacto</a>
+                  <div class="dropdown-content">
+                        <a href="#">Ayuda</a>
+                        <a href="#">Condiciones</a>
+                     </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Categoría</a>
+                    <div class="dropdown-content">
+                        <a href="#">Hombre</a>
+                        <a href="#">Mujer</a>
+                        <a href="#">Niños</a>
+                    </div>
+                </li>
+               <li class="dropdown">
+                <a href="#">Ofertas</a>
+              <div class="dropdown-content">
+                <a href="#">Ayuda</a>
+                 <a href="#">Terminos de uso</a>
+                 </div>
+               </li>
+           </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user">
+            <a href="carrito.html"><img src="./img/carrito_1.png" alt="icono de carrito" class="carrito-img" /></a>
+            <a href="iniciarSesion.html"><img src="./img/pngwing.com.png"></a>
+        </div>
+    </header>
+
+
+        <div class="center-text">Tu página de ayuda y preguntas</div>
+
+        <div class="main-content">
+            <div class="contact-info">
+                <h3>CONTACTA CON NOSOTROS</h3>
+                <p>PRODUCTOS Y PEDIDOS</p>
+                <p>+34 913753366</p>
+                <p>9:00-21:00</p>
+                <p>Lunes - Viernes</p>
+                <p>9:00-18:00</p>
+                <p>Sábado</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>NRC, NTC Y .SWOOSH</h3>
+                <p>+34 913753399</p>
+                <p>9:00 - 18:00</p>
+                <p>Lunes - Viernes</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>BUSCADOR DE TIENDAS</h3>
+                <p>Encuentra tu Nike Store más cercana</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <header class="footer-header">
+            <h3>Productos</h3>
+            <h3>Categoría</h3>
+            <h3>Información de la Empresa</h3>
+            <h3>Follow Us</h3>
+        </header>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul>
+                    <li>Calzado</li>
+                    <li>Ropa</li>
+                    <li>Accesorios</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Hombre</li>
+                    <li>Mujer</li>
+                    <li>Niños</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Acerca de Couture</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <div class="social-icons">
+                    <a href="#"><img src="./img/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./img/face_1.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+          
+</body>
+      
+</html>
