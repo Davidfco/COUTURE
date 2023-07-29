@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COUTURE</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        
+.product-info {
+    text-align: center;
+    font-size: 14px;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 14px;
+    color: green;
+}
+
+      
+      .footer-header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header h3 {
+    margin: 0;
+    flex-basis: 25%;
+}
+
+footer {
+  
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+
+}
+
+.footer-content {
+  display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: -3;
+}
+
+.footer-section ul li {
+    margin-bottom: 7px;
+}
+
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+
+         .logo img {
+            margin-top: -10px;
+            width: 80px;
+            height: 70px;
+            display: flex;
+            float: left;
+            margin-left: -5px; 
+        }
+
+        .user img {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            float: left;
+            margin-left: 30px; 
+        }
+         header {
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 5px; 
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+      .product {
+            background-color: #f9f9f9; 
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            max-width: 100%;
+            max-height: 200px; 
+            object-fit: cover;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 10px; 
+        }
+
+        .product-info {
+            text-align: center;
+            font-size: 14px; 
+        }
+
+        .product-name {
+            font-size: 18px; 
+            font-weight: bold;
+        }
+
+        .price-discount {
+            font-size: 14px; 
+            color: #000; 
+        }
+
+        .gray-discount {
+            font-size: 14px; 
+            color: #888; 
+            text-decoration: line-through; 
+        }
+
+        .green-discount {
+            font-size: 14px; 
+            color: green; 
+        }
+
+        .add-to-cart-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px; 
+            margin-top: 10px; 
+        }
+      
+        
+
+ 
+        
+        .tendencias-semana {
+            text-align: center; 
+            font-size: 24px;
+            font-weight: bold;
+            margin: 33px 0;
+            width: 100%;
+        }
+
+       
+        .product-list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .product-grid {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+       
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+  
+</head>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./img/pngegg.png" alt="Logo de la empresa" /></a>
+        </div>
+        <nav>
+            <ul>
+              <li class="dropdown">
+                <li class="dropdown">
+               <a href="#">Contacto</a>
+                  <div class="dropdown-content">
+                        <a href="#">Ayuda</a>
+                        <a href="#">Terminos de uso</a>
+                   
+                     </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Categoría</a>
+                    <div class="dropdown-content">
+                        <a href="#">Hombre</a>
+                        <a href="#">Mujer</a>
+                        <a href="#">Niños</a>
+                    </div>
+                </li>
+               <li class="dropdown">
+                <a href="#">Ofertas</a>
+              <div class="dropdown-content">
+                <a href="#">Descuentos Verano</a>
+                 <a href="#">Tennis</a>
+                 </div>
+               </li>
+           </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user">
+            <a href="carrito.html"><img src="./img/carrito_1.png" alt="icono de carrito" class="carrito-img" /></a>
+            <a href="iniciarSesion.html"><img src="./img/pngwing.com.png"></a>
+        </div>
+    </header>
+<div class="product-list-container">
+    <h2 class="tendencias-semana">Tennis</h2>
+    <div class="product-grid">
+        <!-- Producto 1 -->
+        <!-- Producto 19 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-19.jpg" alt="Producto 19">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 19</p>
+        <p class="product-price">₡56,900</p>
+        <p class="original-price">₡64,900</p>
+        <p class="discount">Descuento 12%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 20 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-20.jpg" alt="Producto 20">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 20</p>
+        <p class="product-price">₡49,900</p>
+        <p class="original-price">₡57,900</p>
+        <p class="discount">Descuento 14%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 21 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-21.jpg" alt="Producto 21">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 21</p>
+        <p class="product-price">₡58,900</p>
+        <p class="original-price">₡66,900</p>
+        <p class="discount">Descuento 12%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 22 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-22.jpg" alt="Producto 22">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 22</p>
+        <p class="product-price">₡44,900</p>
+        <p class="original-price">₡52,900</p>
+        <p class="discount">Descuento 15%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 23 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-23.jpg" alt="Producto 23">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 23</p>
+        <p class="product-price">₡39,900</p>
+        <p class="original-price">₡46,900</p>
+        <p class="discount">Descuento 15%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 24 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-24.jpg" alt="Producto 24">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 24</p>
+        <p class="product-price">₡52,900</p>
+        <p class="original-price">₡60,900</p>
+        <p class="discount">Descuento 13%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 25 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-25.jpg" alt="Producto 25">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 25</p>
+        <p class="product-price">₡53,900</p>
+        <p class="original-price">₡59,900</p>
+        <p class="discount">Descuento 10%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 26 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-26.jpg" alt="Producto 26">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 26</p>
+        <p class="product-price">₡45,900</p>
+        <p class="original-price">₡51,900</p>
+        <p class="discount">Descuento 11%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 27 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-27.jpg" alt="Producto 27">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 27</p>
+        <p class="product-price">₡37,900</p>
+        <p class="original-price">₡44,900</p>
+        <p class="discount">Descuento 16%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+
+<!-- Producto 28 -->
+<div class="product">
+    <img src="ruta-de-la-imagen-28.jpg" alt="Producto 28">
+    <div class="product-info">
+        <p class="product-name">Nombre del Producto 28</p>
+        <p class="product-price">₡58,900</p>
+        <p class="original-price">₡64,900</p>
+        <p class="discount">Descuento 9%</p>
+        <button class="add-to-cart-button">Añadir al carrito</button>
+    </div>
+</div>
+         </div>
+</div>
+
+
+
+    <footer>
+        <header class="footer-header">
+            <h3>Productos</h3>
+            <h3>Categoría</h3>
+            <h3>Información de la Empresa</h3>
+            <h3>Follow Us</h3>
+        </header>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul>
+                    <li>Calzado</li>
+                    <li>Ropa</li>
+                    <li>Accesorios</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Hombre</li>
+                    <li>Mujer</li>
+                    <li>Niños</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Acerca de Couture</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <div class="social-icons">
+                    <a href="#"><img src="./img/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./img/face_1.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+      
+    </footer>
+          
+</body>
+      
+</html>

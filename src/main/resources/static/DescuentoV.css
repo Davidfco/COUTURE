@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28/07/2023, 07:33:50 PM
+    Author     : estra
+*/
+
+* {
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.search-box {
+    text-align: right;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 400px;
+    border-radius: 20px;  
+}
+
+
+
+header {
+    margin-top: -10px;
+}
+
+header {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.search-box button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-left: 3px;
+}
