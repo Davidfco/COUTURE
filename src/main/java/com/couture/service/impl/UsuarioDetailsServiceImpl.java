@@ -35,10 +35,8 @@ public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDet
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        //Busca el usuario por el username en la tabla
         Usuario usuario = usuarioDao.findByUsername(username);
 
-        //Si no existe el usuario lanza una excepción
         if (usuario == null) {
 
             throw new UsernameNotFoundException(username);
@@ -49,10 +47,9 @@ public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDet
 
         session.setAttribute("usuarioImagen", usuario.getRutaImagen());
 
-        //Si está acá es porque existe el usuario... sacamos los roles que tiene
         var roles = new ArrayList<GrantedAuthority>();
 
-        for (Rol rol : usuario.getRoles()) {   //Se sacan los roles
+        for (Rol rol : usuario.getRoles()) { 
 
             roles.add(new SimpleGrantedAuthority(rol.getNombre()));
 

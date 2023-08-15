@@ -24,11 +24,11 @@ public class Categoria implements Serializable{
     @JoinColumn(name="id_categoria")
     List<Producto> productos;
 
-    public Categoria() {
-    }
-
     public Categoria(String categoria, boolean activo) {
         this.descripcion = categoria;
         this.activo = activo;
+    }
+    
+    public Categoria() {
     }
 }

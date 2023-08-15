@@ -42,7 +42,6 @@ public class ProductoServiceImpl implements ProductoService {
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-    // Lista de productos con precio entre ordendados por descripción ConsultaAmpliada
 
     @Override
     @Transactional(readOnly = true)

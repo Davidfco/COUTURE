@@ -155,7 +155,6 @@ public class RegistroServiceImpl implements RegistroService {
         return clave;
     }
 
-    //Ojo cómo le lee una informacion del application.properties
     @Value("${servidor.http}")
     private String servidor;
 

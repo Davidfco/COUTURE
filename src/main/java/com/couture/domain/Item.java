@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class Item extends Producto {
 
-    private int cantidad; //Almacenar la cantidad de items de un producto
+    private int cantidad;
 
     public Item() {
     }
@@ -21,8 +21,6 @@ public class Item extends Producto {
         super.setCategoria(producto.getCategoria());
         super.setDescripcion(producto.getDescripcion());
         super.setDetalle(producto.getDetalle());
-        super.setGenero(producto.getGenero());
-        super.setDescuento(producto.getDescuento());
         super.setPrecio(producto.getPrecio());
         super.setExistencias(producto.getExistencias());
         super.setActivo(producto.isActivo());
